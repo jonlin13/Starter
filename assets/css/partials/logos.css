@@ -1,0 +1,12 @@
+.g-logos{
+  text-align: center;
+  padding: var(--padding-section);
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    &__item{
+      display: block;
+      width: 10rem;
+    }
+  }
+}

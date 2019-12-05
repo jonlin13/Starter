@@ -1,0 +1,14 @@
+.g-cta{
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 15px 13px;
+  padding-right: 20px;
+  &--link{
+    text-decoration: underline;
+    background-image: url("../images/ui-cta-link-arrow.svg");
+  }
+  &--btn{
+    background-image: url("../images/ui-cta-link-arrow.svg");
+  }
+}

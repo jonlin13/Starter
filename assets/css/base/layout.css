@@ -1,0 +1,9 @@
+.g-body{
+  border: var(--border-body);
+  background-color: white;
+  &__inner{
+    padding: var(--padding-body-inner);
+    background-color: var(--color-cream);
+    &__main{}
+  }	
+}

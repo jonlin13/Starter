@@ -3,20 +3,63 @@
 
 :root {
 
-    /* Colours */
-    --color-primary: #3eb0ef;
-    --color-base: #131313;
-    --color-border: #ddd;
-    --color-bg: #f5f5f5;
+    /* Colors - palette */
+    --color-infared: #FF0E54;
+    --color-cream: #FCF7F0;
+    --color-darkgray: #424348;
+    --color-lightblue: #7FABFF;
+
+    --color-highlight-teal: #72F2D0;
+    --color-highlight-yellow: #FFCE40;
 
     /* Fonts */
-    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: Georgia, Times, serif;
-    --font-mono: Menlo, Courier, monospace;
-    --font-light: 100;
-    --font-normal: 400;
-    --font-bold: 700;
-    --font-heavy: 800;
+    --font-sans: "National", "Helvetica Neue", arial, sans-serif;
+    --font-serif: "Tiempos", Georgia, Times, serif;
+    --font-mono: "Fira Code", Menlo, Courier, monospace;
+
+    --font-sans-light: 300;
+    --font-sans-normal: 400;
+    --font-sans-medium: 500;
+    --font-sans-semibold: 600;
+    --font-sans-bold: 700;
+
+    --font-serif-normal: 400;
+    --font-serif-medium: 500;
+    --font-serif-semibold: 600;
+    --font-serif-bold: 700;
+
+    --font-mono-normal: 400;
+
+    --font-size-body: 1.15rem;
+    --line-height-body: 1.6rem;
+    --vert-margin-p: 0.8rem;
+
+    --font-size-h1: 3rem;
+    --line-height-h1: 3rem;
+    --vert-margin-h1: 1.5rem;
+
+    --font-size-h2: 2.3rem;
+    --line-height-h2: 2.3rem;
+    --vert-margin-h2: 1rem;
+
+    --font-size-h3: 1.9rem;
+    --line-height-h3: 1.9rem;
+    --vert-margin-h3: 0.9rem;
+
+    --font-size-h4: 0.85rem;
+    --line-height-h4: 0.85rem;
+    --vert-margin-h4: 0.5rem;
+
+    --font-size-h5: 1.2rem;
+    --line-height-h5: 1.2rem;
+    --vert-margin-h5: 0.75rem;
+
+    --font-size-h6: 0.9rem;
+    --line-height-h6: 0.9rem;
+    --vert-margin-h6: 0.35rem;
+
+    /* Borders */
+    --border-body: 15px solid white;
 
     /* Breakpoints */
     --xlarge: 1680px;
@@ -30,4 +73,6 @@
     --margin: 2rem;
     --radius: 0.5rem;
 
+    --padding-body-inner: 3rem 0 3rem 0;
+    --padding-section: 0rem 3rem;
 }

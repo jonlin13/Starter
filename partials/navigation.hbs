@@ -1,0 +1,9 @@
+<ul class="g-nav" role="menu">
+  {{#foreach navigation}}
+  <li 
+  class="g-nav__item {{link_class for=(url) class=(concat "nav-" slug)}}" 
+  role="menuitem">
+  	<a class="g-nav__item__link" href="{{url absolute="true"}}">{{label}}</a>
+  </li>
+  {{/foreach}}
+</ul>

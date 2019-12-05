@@ -1,0 +1,16 @@
+.g-header-tag{
+  display: inline-block;
+  padding:0.2rem 1rem;
+  &--beta{
+    background-color: var(--color-highlight-yellow);
+    color: var(--color-darkgray);
+  }
+  &--new{
+    background-color: var(--color-highlight-teal);
+    color: var(--color-darkgray);
+  }
+  &--free{
+    background-color: var(--color-lightblue);
+    color: var(--color-darkgray);
+  }
+}

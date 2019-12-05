@@ -57,7 +57,9 @@
         "gulp-zip": "5.0.0",
         "postcss-color-function": "4.1.0",
         "postcss-custom-properties": "9.0.2",
-        "postcss-easy-import": "3.0.0"
+        "postcss-easy-import": "3.0.0",
+        "postcss-nested": "^4.2.1",
+        "postcss-preset-env": "^6.7.0"
     },
     "browserslist": [
         "defaults"

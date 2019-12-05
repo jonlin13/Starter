@@ -1,0 +1,32 @@
+.g-features{
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: var(--padding-section);
+    &__description{
+      width: 50rem;
+      padding: 0 4rem 0 0;
+    }
+    &__image{
+      &--small{
+        padding:0 3rem;
+      }
+    }
+    &--flow-right{
+      padding-right:0;
+    }
+    &--flow-left{
+      padding-left:0;
+      .g-features__item__description{
+        padding: 0 0 0 4rem;
+      }
+    }
+  }
+  &--bg-white{
+    background-color: white;
+    background-image: url(../images/ui-quote-pattern.svg);
+    background-position: 20% top;
+    background-repeat: no-repeat;
+  }
+}

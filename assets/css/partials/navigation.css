@@ -1,0 +1,6 @@
+.g-nav{
+	&__item{
+    display: inline-block;
+		&__link{}
+	}
+}

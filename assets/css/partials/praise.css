@@ -1,0 +1,18 @@
+.g-praise{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    &__item{
+      text-align: center;
+      &__photo{
+        margin:0 auto;
+        width:5rem;
+        border-radius: 5rem;
+        overflow:hidden;
+      }
+      &__quote{}
+      &__attribution{}
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.g-signup{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  background-color: var(--color-darkgray);
+  &__cta{
+    width:55%;
+    &__checklist{
+      &__item{
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 25px 25px;
+        padding-left: 30px;
+        background-image: url("../images/ui-checkmark.svg");
+      }
+    }
+  }
+  &__form{
+    &__input{
+      display: block;
+      width: 100%;
+    }
+    &__btn{
+      display: block;
+      width: 100%;
+    }
+  }
+}

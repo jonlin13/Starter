@@ -1,0 +1,20 @@
+.g-hero{
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: var(--padding-section);
+  &__cta{
+    position: relative;
+    width: 30rem;
+  }
+  &__image{
+    position: relative;
+    left: 9rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 70rem;
+    height: 50rem;
+  }
+}

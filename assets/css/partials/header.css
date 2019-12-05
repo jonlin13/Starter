@@ -1,0 +1,11 @@
+.g-header{
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: var(--padding-section);
+  z-index: 5;
+  &__brand{}
+  &__menu{}
+  &__options{}
+}
