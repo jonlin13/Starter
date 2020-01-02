@@ -6,11 +6,16 @@
     /* Colors - palette */
     --color-infared: #FF0E54;
     --color-cream: #FCF7F0;
-    --color-darkgray: #424348;
+    --color-darkgray: #212227;
+    --color-charcoal: rgba(66, 67, 72, 1);
+    --color-lightcharcoal: rgba(66, 67, 72, 0.77);
     --color-lightblue: #7FABFF;
+    --color-burgundy: #65001d;
+    --color-purpleblue: #4E24FF;
 
     --color-highlight-teal: #72F2D0;
-    --color-highlight-yellow: #FFCE40;
+    --color-highlight-yellow: #FFCE40; 
+    --color-highlight-brightyellow: #FAEF32;
 
     /* Fonts */
     --font-sans: "National", "Helvetica Neue", arial, sans-serif;
@@ -23,6 +28,7 @@
     --font-sans-semibold: 600;
     --font-sans-bold: 700;
 
+    --font-serif-light: 400;
     --font-serif-normal: 400;
     --font-serif-medium: 500;
     --font-serif-semibold: 600;
@@ -30,16 +36,22 @@
 
     --font-mono-normal: 400;
 
+    /*large*/
     --font-size-body: 1.15rem;
     --line-height-body: 1.6rem;
     --vert-margin-p: 0.8rem;
+
+    /*small*/
+    --font-size-body_SMALL: 0.9rem;
+    --line-height-body_SMALL: 1.48rem;
+    --vert-margin-p_SMALL: 0.6rem;
 
     --font-size-h1: 3rem;
     --line-height-h1: 3rem;
     --vert-margin-h1: 1.5rem;
 
     --font-size-h2: 2.3rem;
-    --line-height-h2: 2.3rem;
+    --line-height-h2: 2.8rem;
     --vert-margin-h2: 1rem;
 
     --font-size-h3: 1.9rem;
@@ -51,7 +63,7 @@
     --vert-margin-h4: 0.5rem;
 
     --font-size-h5: 1.2rem;
-    --line-height-h5: 1.2rem;
+    --line-height-h5: 1.5rem;
     --vert-margin-h5: 0.75rem;
 
     --font-size-h6: 0.9rem;
@@ -63,16 +75,25 @@
 
     /* Breakpoints */
     --xlarge: 1680px;
-    --large: 1280px;
-    --medium: 980px;
+    --large: 1200px;
+    --medium: 900px;
     --small: 740px;
     --xsmall: 480px;
 
-    /* Sizes */
-    --height: 4rem;
-    --margin: 2rem;
-    --radius: 0.5rem;
-
+    /* SIZES */
+    /*large device*/
     --padding-body-inner: 3rem 0 3rem 0;
-    --padding-section: 0rem 3rem;
+    --padding-section: 6rem;
+    --padding-section-intro: 3rem 0;
+    --margin-section: 10rem 0rem 7rem 0rem;
+    /*medium device*/
+    /*small device*/
+    --padding-body-inner_SMALL:1rem 0 1rem 0;
+
+
+    /* Animations & transitions */
+
+    --hover-link: all 0.15s ease-in-out;
+    --hover-menu-item: all 0.25s ease-in-out;
+    --hover-button: all 0.25s ease-in-out;
 }

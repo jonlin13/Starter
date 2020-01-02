@@ -1,0 +1,7 @@
+input{
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border:none;
+  color: var(--color-charcoal);
+}

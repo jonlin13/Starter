@@ -1,0 +1,98 @@
+.g-planfeature{
+  &__chart{
+    /*padding: 5rem;*/
+    &__row{
+      list-style-type: none;
+      margin-top:-2px;
+      display: flex;
+      /*padding:1rem 2rem;*/
+      &__cell{
+        position: relative;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        vertical-align: top;
+        /*border-top:1px solid;*/
+        margin:0 10px;
+        p{
+          margin:0;
+          line-height:1.7rem;
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-size: 12px 10px;
+          background-image: url("../images/ui-planfeature-check.svg");
+          padding-left:30px;
+        }
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          top:0;
+          left:50%;
+          transform: translateX(-50%);
+          width:calc(100% - 4rem);
+          height:1px;
+          opacity:0.35;
+        }
+        &--title{
+          &:before{
+            content: none;
+          }
+          h4{
+            margin-right:1rem;
+          }
+          h5{
+            display: inline-block;
+          }
+        }
+        &--label{
+          font-family: Fira Code;
+          font-size: 0.85rem;
+          color: #6f6f6f;
+          width: 19%;
+          &:before{
+            background-color: var(--color-darkgray);
+          }
+          h5{
+            margin:0;
+          }
+        }
+        &--first{
+          &:before{
+            content: none;
+          }        }
+        &--pro{
+          width: 37%;
+          background-color: white;
+          &:before{
+            background-color: var(--color-purpleblue);
+          }
+          &__price{}
+          &__callout{
+            color: var(--color-purpleblue);
+          }
+        }
+        &--enterprise{
+          width: 37%;
+          background-color: white;
+          &:before{
+            background-color: var(--color-infared);
+          }
+          &__price{}
+          &__callout{
+            color: var(--color-infared);
+          }
+        }
+        &--cta{
+          &:before{
+            content: none;
+          }
+        }
+        &__price{}
+        &__callout{}
+        &__ctabtn{
+          width:100%;
+        }
+      }
+    }
+  }
+}

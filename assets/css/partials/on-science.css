@@ -3,22 +3,22 @@
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
-    padding: var(--padding-section);
+    padding: var(--padding-section) 0;
+    align-items: center;
     &__description{
-      width: 50rem;
+      width: 40rem;
       padding: 0 4rem 0 0;
     }
     &__image{
-      &--small{
-        padding:0 3rem;
-      }
+      max-width: 800px;
+      width: 95%;
     }
     &--flow-right{
-      padding-right:0;
+      /*padding-right:0;*/
     }
     &--flow-left{
-      padding-left:0;
-      .g-features__item__description{
+      /*padding-left:0;*/
+      .g-on-science__item__description{
         padding: 0 0 0 4rem;
       }
     }
@@ -30,3 +30,12 @@
     background-repeat: no-repeat;
   }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}

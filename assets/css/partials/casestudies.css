@@ -1,4 +1,4 @@
-.g-features{
+.g-casestudies{
   padding: var(--padding-section) 0rem 0rem 0rem;
   max-width: 100%;
   &__item{
@@ -23,7 +23,7 @@
     }
     &--flow-left{
       padding-left:0;
-      .g-features__item__description{
+      .g-casestudies__item__description{
         padding: 0 0 0 4rem;
       }
     }

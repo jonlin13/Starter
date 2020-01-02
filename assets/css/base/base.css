@@ -25,9 +25,24 @@ body {
   background: #fff;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    font-size: var(--font-size-body_SMALL);
+    line-height: var(--line-height-body_SMALL);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
 
 p,
 ul,
@@ -49,13 +64,14 @@ blockquote {
 
 ul[class],
 ol[class] {
-  padding: 0;
   list-style: none;
 }
 
 img {
   display: block;
   max-width: 100%;
+  position: relative;
+  margin: 0 auto;
 }
 
 input,
@@ -63,6 +79,13 @@ button,
 select,
 textarea {
   font: inherit;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  padding:0;
+  display: inline-block;
 }
 
 fieldset {

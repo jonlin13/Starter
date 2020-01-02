@@ -2,27 +2,39 @@
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
-  background-color: var(--color-darkgray);
+  background-color: var(--color-highlight-brightyellow);
+  padding: 3rem;
+  margin: 0 auto;
+  width:calc(100% - 3rem);
+  align-items: center;
   &__cta{
     width:55%;
     &__checklist{
+      margin-top:2rem;
       &__item{
         background-repeat: no-repeat;
         background-position: left center;
         background-size: 25px 25px;
         padding-left: 30px;
         background-image: url("../images/ui-checkmark.svg");
+        margin: 1rem 0;
       }
     }
   }
-  &__form{
-    &__input{
-      display: block;
-      width: 100%;
-    }
-    &__btn{
-      display: block;
-      width: 100%;
+  &__formwrap{
+    &__form{
+      margin:1.5rem 0;
+      &__input{
+        display: block;
+        width: 100%;
+      }
+      &__btn{
+        display: block;
+        width: 100%;
+        margin-top:1rem;
+      }
     }
   }
 }
+
+@media only screen and (max-width: 900px) {}

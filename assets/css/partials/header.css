@@ -3,9 +3,132 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: var(--padding-section);
+  align-items: center;
+  padding: 0 3rem;
   z-index: 5;
-  &__brand{}
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 0.94rem;
+  &__brand{
+    height: 1.6rem;
+    svg{
+      width: 100%;
+    }
+  }
   &__menu{}
-  &__options{}
+  &__options{
+
+    &__login{
+      color: var(--color-darkgray);
+      text-decoration: underline;
+    }
+    &__signup{
+      margin-left:1rem;
+    }
+  }
+  &__mobilemenu{
+    position: fixed;
+    top:0px;
+    left:0;
+    min-height:30rem;
+    width:100%;
+    padding: 14px;
+    opacity: 0;
+    transform: translate3d(0px, 30px, 0px) scale(0.95);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    &.on{
+      transform: translate3d(0px, 0px, 0px) scale(1);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &__mobilemenutrigger-wrap{
+    position: absolute;
+    top:10px;
+    right:20px;
+    width:25px;
+    height: 22px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    &__btn{
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width:100%;
+      height:2px;
+      background-color: var(--color-lightcharcoal);
+      transition: all 0.3s ease-in-out;
+      &:after, &:before{
+        content:'';
+        display: block;
+        position: absolute;
+        width:100%;
+        height:2px;
+        background-color: var(--color-lightcharcoal);
+        transform-origin: center;
+        transition: all 0.3s ease-in-out;
+      }
+      &:before{
+        transform: translateY(-8px);
+      }
+      &:after{
+        transform: translateY(8px);
+      }
+    }
+    &.on{
+      .g-header__mobilemenutrigger-wrap__btn{
+        background-color: transparent;
+        &:before{
+          transform: translateY(0px) rotate(-45deg);
+        }
+        &:after{
+          transform: translateY(0px) rotate(45deg);
+        }
+      }
+    }
+  }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 900px) {
+  .g-header{
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    &__brand{
+      position: relative;
+      top: 8px;
+      z-index: 2;
+      padding-left: 0.3rem;
+    }
+    &__menu{
+      display: none;
+    }
+    &__options{
+      display: none;
+      &__login{
+        color: var(--color-darkgray);
+        text-decoration: underline;
+      }
+      &__signup{
+        margin-left:1rem;
+      }
+    }
+    &__mobilemenu{
+      display: block;
+      &.on{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &__mobilemenutrigger-wrap{
+      display: block;
+      z-index: 2;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+

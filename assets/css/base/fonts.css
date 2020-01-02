@@ -58,6 +58,14 @@
 
 // Serif font
 @font-face {
+  font-family: 'Tiempos';
+  src:
+    url('../fonts/tiempos/TiemposHeadlineWeb-Light.woff2') format('woff2'),
+    url('../fonts/tiempos/TiemposHeadlineWeb-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
 	font-family: 'Tiempos';
 	src:
 		url('../fonts/tiempos/TiemposHeadlineWeb-Regular.woff2') format('woff2'),

@@ -1,9 +1,46 @@
 <ul class="g-nav" role="menu">
-  {{#foreach navigation}}
+
+  <li class="g-nav__item nav-products" role="menuitem">
+    <a class="g-nav__item__link" href="http://localhost:2368/">Products
+      <span class="g-nav__item__link__arrow">{{> "svgs/menu-arrow"}}</span>
+    </a>
+    <div class="g-nav__item__submenuwrap">
+      <ul class="g-nav__item__submenuwrap__submenu">
+        <li class="g-nav__item__submenuwrap__submenu__item" role="menuitem">
+          <a class="g-nav__item__submenuwrap__submenu__item__link" href="http://localhost:2368/">IdeaFlow</a>
+          <p class="g-nav__item__submenuwrap__submenu__item__subtext">The new frontier of Conversational A.I.</p>
+        </li>
+        <li class="g-nav__item__submenuwrap__submenu__item" role="menuitem">
+          <a class="g-nav__item__submenuwrap__submenu__item__link" href="http://localhost:2368/">IdeaAnalytics</a>
+          <p class="g-nav__item__submenuwrap__submenu__item__subtext">Next-gen analytics powered by Idea A.I.</p>
+        </li>
+        <li class="g-nav__item__submenuwrap__submenu__item" role="menuitem">
+          <a class="g-nav__item__submenuwrap__submenu__item__link" href="http://localhost:2368/">IdeaMail</a>
+          <p class="g-nav__item__submenuwrap__submenu__item__subtext">A/B testing for every idea in your email.</p>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="g-nav__item nav-science" role="menuitem">
+    <a class="g-nav__item__link" href="http://localhost:2368/tag/getting-started/">Science</a>
+  </li>
+  <li class="g-nav__item nav-company" role="menuitem">
+    <a class="g-nav__item__link" href="http://localhost:2368/author/ghost/">Company</a>
+  </li>
+  <li class="g-nav__item nav-blog" role="menuitem">
+    <a class="g-nav__item__link" href="https://ghost.org/docs/">Blog</a>
+  </li>
+
+{{!--   {{#foreach navigation}}
+    {{#has slug="docs"}}
+      <p>chicken</p>
+    {{/has}}
   <li 
   class="g-nav__item {{link_class for=(url) class=(concat "nav-" slug)}}" 
   role="menuitem">
-  	<a class="g-nav__item__link" href="{{url absolute="true"}}">{{label}}</a>
+  	<a 
+    class="g-nav__item__link" 
+    href="{{url absolute="true"}}">{{label}}</a>
   </li>
-  {{/foreach}}
+  {{/foreach}} --}}
 </ul>

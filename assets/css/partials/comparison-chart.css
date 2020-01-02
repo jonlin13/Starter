@@ -1,0 +1,30 @@
+.g-comparisonchart{
+  &__chart{
+    padding: 5rem;
+    &__row{
+      list-style-type: none;
+      margin-top:-2px;
+      /*padding:1rem 2rem;*/
+      &__cell{
+        display: inline-block;
+        width:32.33333%;
+        padding: 1rem 1rem 1rem 2rem;
+        &--ideaflow{
+          background-color: rgba(255, 241, 0, 0.59);
+          /*background-color: rgba(255, 255, 255, 0.5);*/
+          /*border-bottom: 1px solid #efe9e2;*/
+
+        }
+        &--label{
+          font-family: Fira Code;
+          text-transform: uppercase;
+          font-size: 0.85rem;
+          color: #6f6f6f;
+        }
+      }
+      &:nth-child(even){
+        background-color: #f5efe8;
+      }
+    }
+  }
+}

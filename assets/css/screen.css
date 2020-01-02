@@ -21,6 +21,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "partials/header.css";
 @import "partials/footer.css";
 @import "partials/navigation.css";
+@import "partials/mobile-nav.css";
 @import "partials/hero.css";
 @import "partials/logos.css";
 @import "partials/features.css";
@@ -28,9 +29,15 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "partials/industries.css";
 @import "partials/on-science.css";
 @import "partials/signup.css";
+@import "partials/footer-navigation.css";
+@import "partials/how-it-works.css";
+@import "partials/comparison-chart.css";
+@import "partials/casestudies.css";
+@import "partials/planfeature-chart.css";
 
 /* Elements */
 @import "elements/cta.css";
 @import "elements/header-tag.css";
 @import "elements/section-intro.css";
 @import "elements/button.css";
+@import "elements/input.css";

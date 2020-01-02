@@ -2,7 +2,13 @@
   <div class="g-header__brand">{{> "svgs/g-wordmark"}}</div>
   <div class="g-header__menu">{{navigation}}</div>
   <div class="g-header__options">
-    <a href="#">Log-in</a>
-    <button href="#">Sign-up</button>
+    <a class="g-header__options__login" href="#">Log-in</a>
+    <a class="g-header__options__signup g-btn g-btn--dark" href="#">Sign-up</a>
+  </div>
+  <div class="g-header__mobilemenu">
+      {{> "mobile-navigation"}}
+  </div>
+  <div class="g-header__mobilemenutrigger-wrap">
+    <span class="g-header__mobilemenutrigger-wrap__btn"></span>
   </div>
 </header>

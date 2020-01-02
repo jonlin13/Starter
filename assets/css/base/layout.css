@@ -1,3 +1,15 @@
+section{
+  max-width:80rem;
+  position: relative;
+  margin:0 auto;
+  padding: var(--padding-section);
+}
+.g-white-pattern-bg{
+  background-color: white;
+  background-image: url(../images/ui-quote-pattern.svg);
+  background-position: 20% top;
+  background-repeat: no-repeat;
+}
 .g-body{
   border: var(--border-body);
   background-color: white;
@@ -6,4 +18,13 @@
     background-color: var(--color-cream);
     &__main{}
   }	
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 900px) {
+  .g-body{
+    border: 8px solid #fff;
+    &__inner{
+      padding: var(--padding-body-inner_SMALL);
+    } 
+  }
 }

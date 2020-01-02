@@ -1,6 +1,7 @@
 var scripts = {
   init: function () {
     scripts.setHeroHeight();
+    scripts.attachEventListeners();
     window.addEventListener('resize', function () {
       scripts.setHeroHeight();
     });
@@ -18,6 +19,17 @@ var scripts = {
     var heightFromHeroToTop = header.offsetHeight + innerBodyPaddingValue + bodyBorderValue;
 
     hero.style.height = (window.innerHeight - heightFromHeroToTop) + "px";
+  },
+  attachEventListeners: function () {
+    var mobileMenu = document.getElementsByClassName('g-header__mobilemenu')[0];
+    var mobileMenuBtn = document.getElementsByClassName('g-header__mobilemenutrigger-wrap')[0];
+    if (mobileMenuBtn){
+      mobileMenuBtn.addEventListener('click', function () {
+        mobileMenuBtn.classList.toggle("on");
+        mobileMenu.classList.toggle("on");
+        console.log('button clicked')
+      })
+    }
   }
 };
 

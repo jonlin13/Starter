@@ -1,6 +1,7 @@
 .g-header-tag{
   display: inline-block;
-  padding:0.2rem 1rem;
+  padding: .45rem 0.6rem;
+  border-radius: 0.2rem;
   &--beta{
     background-color: var(--color-highlight-yellow);
     color: var(--color-darkgray);
@@ -10,7 +11,24 @@
     color: var(--color-darkgray);
   }
   &--free{
-    background-color: var(--color-lightblue);
+    background-color: white;
     color: var(--color-darkgray);
   }
+  &--pro{
+    background-color: var(--color-purpleblue);
+    color: white;
+  }
+  &--enterprise{
+    background-color: var(--color-infared);
+    color: white;
+  }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
