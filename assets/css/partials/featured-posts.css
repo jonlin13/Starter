@@ -1,0 +1,12 @@
+.g-featured-posts{
+  padding:6rem 0 3rem 0;
+  border-bottom: var(--border-sep);
+  &__list{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    &__item{
+      margin:1rem;
+    }
+  }
+}

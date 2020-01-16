@@ -12,6 +12,8 @@
     --color-lightblue: #7FABFF;
     --color-burgundy: #65001d;
     --color-purpleblue: #4E24FF;
+    --color-darkblue: #121D44;
+    --color-darkgreen: #00243A;
 
     --color-highlight-teal: #72F2D0;
     --color-highlight-yellow: #FFCE40; 
@@ -35,6 +37,8 @@
     --font-serif-bold: 700;
 
     --font-mono-normal: 400;
+    --font-mono-medium: 500;
+    --font-mono-semibold: 600;
 
     /*large*/
     --font-size-body: 1.15rem;
@@ -55,7 +59,7 @@
     --vert-margin-h2: 1rem;
 
     --font-size-h3: 1.9rem;
-    --line-height-h3: 1.9rem;
+    --line-height-h3: 2.19rem;
     --vert-margin-h3: 0.9rem;
 
     --font-size-h4: 0.85rem;
@@ -72,6 +76,7 @@
 
     /* Borders */
     --border-body: 15px solid white;
+    --border-sep: 1px solid #DBDBDB;
 
     /* Breakpoints */
     --xlarge: 1680px;

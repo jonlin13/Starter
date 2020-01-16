@@ -1,0 +1,36 @@
+.g-praise-billboard{
+  background-color:white;
+  text-align: center;
+  h4, h2, h5{
+    color: white;
+  }    
+  &--blue{
+    background-color: var(--color-darkblue);
+  }
+  &--green{
+    background-color: var(--color-darkgreen);
+  }
+  &__portrait{
+    margin-bottom: 4rem;
+    margin-top: -11rem;
+  }
+  &__praise{
+    margin:0 auto;
+    margin-bottom: 3rem;
+    max-width:50rem;
+    &__subtitle{
+      &:after{
+        content: '';
+        display: block;
+        height:1px;
+        width:3rem;
+        background-color: white;
+        margin:1rem auto;
+      }
+    }
+  }
+  &__cta{
+    position: relative;
+    margin: 0 auto;
+  }
+}

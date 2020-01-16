@@ -34,9 +34,12 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "partials/comparison-chart.css";
 @import "partials/casestudies.css";
 @import "partials/planfeature-chart.css";
+@import "partials/key-benefits.css";
+@import "partials/praise-billboard.css";
+@import "partials/featured-posts.css";
 
 /* Elements */
-@import "elements/cta.css";
+/*@import "elements/cta.css";*/
 @import "elements/header-tag.css";
 @import "elements/section-intro.css";
 @import "elements/button.css";

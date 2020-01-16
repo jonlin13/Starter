@@ -3,12 +3,19 @@ section{
   position: relative;
   margin:0 auto;
   padding: var(--padding-section);
+  &.bleed{
+    max-width: 100%;
+  }
 }
 .g-white-pattern-bg{
   background-color: white;
   background-image: url(../images/ui-quote-pattern.svg);
   background-position: 20% top;
   background-repeat: no-repeat;
+  padding:1rem 0;
+  &.last{
+    padding-bottom:2rem;
+  }
 }
 .g-body{
   border: var(--border-body);

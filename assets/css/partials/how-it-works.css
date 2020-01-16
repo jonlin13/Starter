@@ -1,6 +1,6 @@
 .g-howitworks{
   padding: var(--padding-section) 0rem 0rem 0rem;
-  max-width: 100%;
+  /*max-width: 100%;*/
   &__wrap{
     text-align: center;
     padding: 2rem 3rem;

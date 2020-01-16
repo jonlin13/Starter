@@ -1,21 +1,45 @@
 .g-hero{
   position: relative;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  /*display: flex;*/
+  /*flex-flow: row nowrap;*/
+  /*align-items: center;*/
   padding: var(--padding-section);
   &__cta{
     position: relative;
-    width: 30rem;
+    width: 50%;
+    display: inline-block;
+    top:50%;
+    transform:translateY(-50%);
+    h1, p{
+      max-width: 30rem;
+    }
+    &__actions{
+      margin-top:3.5rem;
+      &__secondarycta{
+        margin-left:1rem;
+        font-style: italic; 
+      }
+    }
   }
   &__image{
-    position: relative;
-    left: 12rem;
+    position: absolute;
+    width: 70%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 50%;
     background-size: contain;
-    width: 70rem;
-    height: 50rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    min-height: 45rem;
+    right: -10rem;
+    &--nobleed{
+      right:-2rem;
+      max-width: 40rem;
+      /*left:5rem;*/
+      /*width: 40rem;*/
+      /*height:auto;*/
+      /*height: 30rem;*/
+    }
   }
 }
 

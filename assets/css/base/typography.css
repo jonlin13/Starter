@@ -37,7 +37,7 @@ h5{
   font-family: var(--font-sans);
   font-size: var(--font-size-h5);
   line-height: var(--line-height-h5);
-  font-weight: var(--font-sans-bold);
+  font-weight: var(--font-sans-semibold);
   color: var(--color-darkgray);
   margin: var(--vert-margin-h5) 0;
 }
@@ -58,6 +58,12 @@ a{
   &:hover{
     color: var(--color-burgundy);
   }
+  &.cta{
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: var(--font-sans-medium);
+    color: var(--color-darkgray);
+  }
 }
 button{
   font-size: 1rem;
@@ -65,7 +71,6 @@ button{
 }
 
 @media only screen and (max-width: 900px) {
-  a{}
   p{
     margin: var(--vert-margin-p) 0;
   }

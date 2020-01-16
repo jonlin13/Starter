@@ -2,10 +2,28 @@
   text-align: center;
   &__list{
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    align-items: center;
     &__item{
       display: block;
-      width: 10rem;
+      /*width: 10rem;*/
+    }
+    &--row-one{
+      justify-content: space-around;
+      .g-logos__list__item{
+        /*width: 50%;*/
+        max-width:24rem;
+        
+      }
+    }
+    &--row-two{
+      margin-top:2rem;
+      justify-content: center;
+      .g-logos__list__item{
+        max-width:8rem;
+        
+        margin: 0 3rem;
+      }
     }
   }
 }
