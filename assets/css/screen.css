@@ -10,6 +10,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 
 /* resources */
 @import "vars.css";
+@import "utilities.css";
 
 /* Base styles */
 @import "base/fonts.css";
@@ -24,23 +25,24 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "partials/mobile-nav.css";
 @import "partials/hero.css";
 @import "partials/logos.css";
-@import "partials/features.css";
 @import "partials/praise.css";
-@import "partials/industries.css";
-@import "partials/on-science.css";
 @import "partials/signup.css";
 @import "partials/footer-navigation.css";
-@import "partials/how-it-works.css";
 @import "partials/comparison-chart.css";
-@import "partials/casestudies.css";
 @import "partials/planfeature-chart.css";
 @import "partials/key-benefits.css";
 @import "partials/praise-billboard.css";
 @import "partials/featured-posts.css";
+@import "partials/principles.css";
+@import "partials/idealearning-circle.css";
+@import "partials/about.css";
+@import "partials/founder.css";
+@import "partials/careers.css";
+@import "partials/investors.css";
 
 /* Elements */
 /*@import "elements/cta.css";*/
 @import "elements/header-tag.css";
-@import "elements/section-intro.css";
+@import "elements/section.css";
 @import "elements/button.css";
 @import "elements/input.css";

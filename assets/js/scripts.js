@@ -2,6 +2,7 @@ var scripts = {
   init: function () {
     scripts.setHeroHeight();
     scripts.attachEventListeners();
+    scripts.getJobsList();
     window.addEventListener('resize', function () {
       scripts.setHeroHeight();
     });
@@ -23,12 +24,30 @@ var scripts = {
   attachEventListeners: function () {
     var mobileMenu = document.getElementsByClassName('g-header__mobilemenu')[0];
     var mobileMenuBtn = document.getElementsByClassName('g-header__mobilemenutrigger-wrap')[0];
+    var headerLogoEl = document.getElementsByClassName('g-header__brand')[0];
+    var rootEl = document.documentElement;
     if (mobileMenuBtn){
       mobileMenuBtn.addEventListener('click', function () {
         mobileMenuBtn.classList.toggle("on");
         mobileMenu.classList.toggle("on");
-        console.log('button clicked')
+        headerLogoEl.classList.toggle("mobileOpen");
+        rootEl.classList.toggle("mobileOpen");
+        console.log(headerLogoEl)
+        console.log('button clicked');
       })
+    }
+  },
+  getJobsList: function () {
+    var jobsListEl = document.getElementsByClassName('gamalon-jobs-list');
+    if (jobsListEl) {
+      var Http = new XMLHttpRequest();
+      var url = 'https://hire.withgoogle.com/v2/api/t/gamaloncom/public/jobs';
+      Http.open("GET", url);
+      Http.send();
+      Http.onreadystatechange = function(e) {
+        var posts = Http.responseText;
+        console.log(posts);
+      }
     }
   }
 };

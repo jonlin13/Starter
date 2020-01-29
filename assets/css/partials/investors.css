@@ -1,0 +1,7 @@
+.g-investors{
+  &__logos{
+    &__item{
+      flex: 0 0 13rem !important;
+    }
+  }
+}

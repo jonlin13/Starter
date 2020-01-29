@@ -89,6 +89,41 @@
   }
 }
 
+.page-science, .page-company{
+  .g-nav{
+    &__item{
+      &__link{
+        &.parent{
+          color: white;
+        }
+      }
+      &:after{
+        background-color: white;
+        opacity:0.35;
+      }
+      &__submenuwrap{
+        &__submenu{
+          background-color: white;
+          box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.08);
+          &__item{
+            &__link{
+              color: var(--color-darkgray);
+            }
+            &__subtext{
+              color: var(--color-lightcharcoal);
+            }
+          }
+          &:after{ 
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid white;
+          }
+        }  
+      }
+    }
+  }  
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 939px) {
   .g-nav{

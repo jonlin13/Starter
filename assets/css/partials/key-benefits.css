@@ -3,6 +3,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
+    justify-content: center;
     &__item{
       width:32%;
       padding:0 2rem;

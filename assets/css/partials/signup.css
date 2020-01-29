@@ -1,14 +1,5 @@
 .g-signup{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row nowrap;
-  background-color: var(--color-highlight-brightyellow);
-  padding: 3rem;
-  margin: 0 auto;
-  width:calc(100% - 3rem);
-  align-items: center;
   &__cta{
-    width:55%;
     &__checklist{
       margin-top:2rem;
       &__item{

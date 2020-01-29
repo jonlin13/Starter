@@ -1,5 +1,8 @@
 .g-header{
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 3rem;
+  left:0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -46,7 +49,7 @@
   &__mobilemenutrigger-wrap{
     position: absolute;
     top:10px;
-    right:20px;
+    right:40px;
     width:25px;
     height: 22px;
     opacity: 0;
@@ -91,17 +94,64 @@
     }
   }
 }
+.page-science, .page-company {
+  .g-header{
+    &__brand{
+      .word{
+        fill:white;
+      }
+      &.mobileOpen{
+        .word{
+          fill:var(--color-darkgray);
+        }        
+      }
+    }
+    &__menu{}
+    &__options{
+
+      &__login{
+        color: var(--color-darkgray);
+      }
+      &__signup{
+        background-color: white;
+        color: var(--color-infared);
+      }
+    }
+    &__mobilemenu{
+    }
+    &__mobilemenutrigger-wrap{
+      &__btn{
+        background-color: white;
+        &:after, &:before{
+          background-color: white;
+        }
+        &:before{
+        }
+        &:after{
+        }
+      }
+      &.on{
+        .g-header__mobilemenutrigger-wrap__btn{
+          /*background-color: var(--color-lightcharcoal);*/
+          &:after, &:before{
+            background-color: var(--color-lightcharcoal);
+          }        
+        }
+      }
+    }
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 900px) {
   .g-header{
-    padding: 0 1rem;
+    top: 2rem;
     font-size: 0.9rem;
     &__brand{
       position: relative;
       top: 8px;
       z-index: 2;
-      padding-left: 0.3rem;
+      /*padding-left: 0.3rem;*/
     }
     &__menu{
       display: none;

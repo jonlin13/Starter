@@ -4,6 +4,37 @@
   /*flex-flow: row nowrap;*/
   /*align-items: center;*/
   padding: var(--padding-section);
+  padding-top: 9rem;
+  max-width: 80rem;
+  min-height: 500px;
+  margin: 0 auto;
+  &.bleed{
+    background-size: cover; 
+    background-repeat: no-repeat;
+    max-width: 100%;
+    padding:0;
+    &:after{
+      display: block;
+      content: '';
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: rgba(17, 18, 21, 0.8)
+    }
+    .g-hero__cta{
+      position: relative;
+      z-index: 2;
+      padding-left: 12%;
+      z-index: 3;
+      /*display: block;*/
+      h1{
+        color: white;
+      }
+    }
+  }
   &__cta{
     position: relative;
     width: 50%;
@@ -41,7 +72,44 @@
       /*height: 30rem;*/
     }
   }
+  &__background-video{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    &:after{
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      height: 40%;
+      background-image: linear-gradient(0deg, black, transparent);
+    }
+    &__wrap{
+      padding-top: 56.25%;
+      iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
+
+.page-company{
+  .g-hero{
+    background-color: black;
+  }
+}
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}

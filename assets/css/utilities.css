@@ -1,0 +1,14 @@
+.m_t_1{ margin-top:1rem; }
+.m_b_1{ margin-bottom:1rem; }
+.m_b_2{ margin-bottom:2rem; }
+
+/* borders: */
+.b_t_teal{ border-top:1px solid var(--color-darkteal); }
+.b_b_teal{ border-bottom:1px solid var(--color-darkteal); }
+.b_t_gray{ border-top:1px solid var(--color-lightgray); }
+.b_b_gray{ border-bottom:1px solid var(--color-lightgray); }
+
+/* padding: */
+.no_pad_b{ padding-bottom: 0 !important; }
+.no_pad_t{ padding-top: 0 !important; }
+.no_pad{ padding: 0 !important; }

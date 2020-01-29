@@ -26,6 +26,20 @@
       }
     }
   }
+  &.customers{
+    .sub-section{
+      &--gridded-row{
+        align-items: center;
+        &__item--five-col{
+          &.basf{}
+          &.gm{ flex: 0 0 5rem; }
+          &.avaya{ flex: 0 0 8.5rem; }
+          &.toyota{}
+          &.askcody{}
+        }
+      }
+    }
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */

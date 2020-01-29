@@ -1,0 +1,18 @@
+<section class="g-featured-posts">
+  <div class='sub-section sub-section--intro'>
+    <h4>Explore</h4>
+    <h2>Revolutionizing Customer Engagement</h2>
+  </div>
+  <div class="g-featured-posts__list">
+  {{#get "posts" filter="featured:true" include="authors" as |featured_post|}}
+    {{#foreach featured_post}}
+    <div class="g-featured-posts__list__item">
+      <img src="{{feature_image}}"/>
+      <h2>{{title}}</h2>
+      <p>{{excerpt}}</p>
+      <h5>{{authors}}</h5>
+    </div>
+    {{/foreach}}
+  {{/get}}
+  </div>
+</section>

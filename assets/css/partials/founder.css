@@ -1,9 +1,5 @@
-.g-section-intro{
-  position: relative;
-  margin: 0 auto;
-  max-width: 53rem;
-  text-align: center;
-  padding: var(--padding-section-intro);
+.g-founder{
+  max-width: unset;
 }
 
 /* Extra small devices (phones, 600px and down) */

@@ -1,9 +1,11 @@
 <header class="g-header">
-  <div class="g-header__brand">{{> "svgs/g-wordmark"}}</div>
+  <div class="g-header__brand">
+    <a href="/">{{> "svgs/g-wordmark"}}</a>
+  </div>
   <div class="g-header__menu">{{navigation}}</div>
   <div class="g-header__options">
-    <a class="g-header__options__login" href="#">Log-in</a>
-    <a class="g-header__options__signup g-btn g-btn--dark" href="#">Sign-up</a>
+    {{!-- <a class="g-header__options__login" href="#">Log-in</a> --}}
+    <a class="g-header__options__signup g-btn g-btn--dark" href="#">Login / Sign-up</a>
   </div>
   <div class="g-header__mobilemenu">
       {{> "mobile-navigation"}}

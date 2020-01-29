@@ -1,6 +1,7 @@
 .g-featured-posts{
-  padding:6rem 0 3rem 0;
-  border-bottom: var(--border-sep);
+  padding: 6rem 2rem 4rem;
+  position: relative;
+  margin: 2rem auto;
   &__list{
     display: flex;
     align-items: baseline;
